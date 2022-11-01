@@ -1,19 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Game_Over here.
+ * Write a description of class Juego here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Game_Over extends World
+public class Juego extends World
 {
 
     /**
-     * Constructor for objects of class Game_Over.
+     * Constructor for objects of class Juego.
      * 
      */
-    public Game_Over()
+    public Juego()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
