@@ -12,6 +12,10 @@ public class NonRecyclable extends Inorganic
         super();
         setRecyclable(false);
         setLabel(getLabel() + "Reciclable");
+        
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() - 750, image.getHeight() - 750);
+        setImage(image);
     }
     
     /**

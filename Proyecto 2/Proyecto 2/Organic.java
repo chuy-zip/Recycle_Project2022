@@ -11,6 +11,10 @@ public class Organic extends Bins
     public Organic(){
         setType(0);
         setLabel("Organico");
+        
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() - 250, image.getHeight() - 350);
+        setImage(image);
     }
     
     /**
