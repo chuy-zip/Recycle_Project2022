@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Inorganic extends Bins
 {
+    
     /**
      * Act - do whatever the Inorganic wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
