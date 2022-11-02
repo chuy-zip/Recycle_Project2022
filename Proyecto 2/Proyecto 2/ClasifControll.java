@@ -24,30 +24,56 @@ public class ClasifControll extends Actor
     /**
      * Logic to check if the waste placed in the organic bin is correct
      */
-    public boolean IsClassificationCorrect_ORGANIC(Waste waste, Bins bin){
-        if (waste.isOrganic() && bin.getType() == 0){
+    public boolean IsClassificationCorrect_ORGANIC(Actor waste, Bins bin, Juego juego){
+        if (((Waste)waste).isOrganic() && bin.getType() == 0){
+            addPoints(juego);
             return true;
         }
+        
+        SubstractPoints(juego);
         return false;
     }
     
     /**
      * Logic to check if the waste placed int inorganic and recyclable bin is correct
      */
-    public boolean IsClassificationCorrect_INORGANIC_REC(Waste waste, Bins bin){
+    public boolean IsClassificationCorrect_INORGANIC_REC(Waste waste, Bins bin, Juego juego){
         if (!waste.isOrganic() && bin.getType() == 1 && ((Inorganic)bin).isRecyclable() ){
+            System.out.println("Correcto");
             return true;
         }
+        
+        SubstractPoints(juego);
         return false;
     }
     
     /**
      * Logic to check if the waste placed int inorganic and Nonrecyclable bin is correct
      */
-    public boolean IsClassificationCorrect_INORGANIC_NONREC(Waste waste, Bins bin){
-        if (!waste.isOrganic() && bin.getType() == 1 && ((Inorganic)bin).isRecyclable() ){
+    public boolean IsClassificationCorrect_INORGANIC_NONREC(Waste waste, Bins bin, Juego juego){
+        if (!waste.isOrganic() && bin.getType() == 1 && !((Inorganic)bin).isRecyclable() ){
+            System.out.println("Correcto");
             return true;
         }
+        
+        SubstractPoints(juego);
         return false;
+    }
+    
+    public void addPoints(Juego juego){
+        System.out.println("Coasdasdasrrecto");
+        juego.setScore(5);
+        
+        int gameScore = juego.getScore();
+            
+        juego.setScore(gameScore + 50);
+    }
+    
+    public void SubstractPoints(Juego juego){
+        juego.setScore(5);
+        
+        int gameScore = juego.getScore();
+            
+        juego.setScore(gameScore - 50);
     }
 }

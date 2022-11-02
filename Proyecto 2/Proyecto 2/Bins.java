@@ -12,12 +12,14 @@ public abstract class Bins extends Actor
     private int Type;
     private String Label;
     private ArrayList<Waste> WasteInBin = new ArrayList<Waste>();
+    private ClasifControll Controller = new ClasifControll();
 
     /**
      * Act - do whatever the Bins wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act(){
+        
     }
     
     public void DetectWaste(){
@@ -28,6 +30,8 @@ public abstract class Bins extends Actor
             World world;
             world = getWorld();
             world.removeObject(Waste);
+            
+            Controller.IsClassificationCorrect_ORGANIC(Waste, this, (Juego)getWorld());
         }
     }
     

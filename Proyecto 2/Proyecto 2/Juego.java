@@ -9,7 +9,27 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Juego extends World
 {
     private int timer = 3600;
-    private int score = 0;
+    private int score;
+    
+    /**
+     * Constructor for objects of class Juego.
+     * 
+     */
+    public Juego()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(600, 400, 1); 
+        prepare();
+        setScore(0);
+    }
+    
+    public int getScore(){
+        return score;
+    }
+    
+    public void setScore(int thescore){
+        score = thescore;
+    }
     
     /**
      * Act - do whatever the Aluminio wants to do. This method is called whenever
@@ -35,24 +55,7 @@ public class Juego extends World
         showText("Puntos: "+ score, 540, 50);
     }
     
-    public int getScore(){
-        return score;
-    }
     
-    public void setScore(int thescore){
-        score = thescore;
-    }
-    
-    /**
-     * Constructor for objects of class Juego.
-     * 
-     */
-    public Juego()
-    {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
-        prepare();
-    }
     
     /**
      * Prepare the world for the start of the program.
