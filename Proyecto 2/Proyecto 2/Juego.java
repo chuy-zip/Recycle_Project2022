@@ -40,7 +40,7 @@ public class Juego extends World
         ShowTimer();
         ShowScore();
         if (timer <= 0) {
-            Greenfoot.setWorld(new Game_Over());
+            Greenfoot.setWorld(new Game_Over(score));
         }
     }
     
