@@ -18,6 +18,7 @@ public class Juego extends World
     public void act()
     {
         ShowTimer();
+        ShowScore();
         if (timer <= 0) {
             Greenfoot.setWorld(new Game_Over());
         }
@@ -30,6 +31,9 @@ public class Juego extends World
         }
     }
     
+    public void ShowScore(){
+        showText("Puntos: "+ score, 540, 50);
+    }
     
     public int getScore(){
         return score;
