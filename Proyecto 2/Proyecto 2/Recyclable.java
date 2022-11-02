@@ -8,6 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Recyclable extends Inorganic
 {
+    public Recyclable(){
+        super();
+        setRecyclable(true);
+        setLabel(getLabel() + "Reciclable");
+    }
     /**
      * Act - do whatever the Recyclable wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
