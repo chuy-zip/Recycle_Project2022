@@ -25,6 +25,6 @@ public class BolsasPL extends Waste
      */
     public void act()
     {
-        // Add your action code here.
+        DragAndDrop();
     }
 }

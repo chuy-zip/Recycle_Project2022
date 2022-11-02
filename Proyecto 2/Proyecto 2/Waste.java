@@ -12,6 +12,8 @@ public abstract class Waste extends Actor
     private boolean Organic;
     private boolean Recycle;
     private int Type;
+    private boolean drag = false;
+    private int rx = 0, ry = 0;
     
     /**
      * Act - do whatever the Waste wants to do. This method is called whenever
@@ -20,6 +22,20 @@ public abstract class Waste extends Actor
     public void act()
     {
         // Add your action code here.
+    }
+    
+    public void DragAndDrop(){
+        if(Greenfoot.mouseDragged(this)){
+            MouseInfo mouse = Greenfoot.getMouseInfo();
+            if(!drag){
+                drag = true;
+                rx = getX()- mouse.getX();
+                ry = getY()- mouse.getY();
+            }
+            else{
+                setLocation(mouse.getX()+rx, mouse.getY() +ry);
+            }
+        }
     }
     
     public int getType(){

@@ -24,6 +24,6 @@ public class PapelCarton extends Waste
      */
     public void act()
     {
-        // Add your action code here.
+        DragAndDrop();
     }
 }

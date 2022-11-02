@@ -25,6 +25,6 @@ public class Fruta extends Waste
      */
     public void act()
     {
-        // Add your action code here.
+        DragAndDrop();
     }
 }
