@@ -8,7 +8,37 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Juego extends World
 {
-
+    private int timer = 3600;
+    private int score = 0;
+    
+    /**
+     * Act - do whatever the Aluminio wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        ShowTimer();
+        if (timer <= 0) {
+            Greenfoot.setWorld(new Game_Over());
+        }
+    }
+    
+    public void ShowTimer(){
+        timer--;
+        if (timer % 60 == 0){
+            showText(""+ timer / 60, 50, 50);
+        }
+    }
+    
+    
+    public int getScore(){
+        return score;
+    }
+    
+    public void setScore(int thescore){
+        score = thescore;
+    }
+    
     /**
      * Constructor for objects of class Juego.
      * 
