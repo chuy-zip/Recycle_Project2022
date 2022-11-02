@@ -13,6 +13,10 @@ public class Aluminio extends Waste
         setName("Aluminio");
         setOrganic(false);
         setRecycle(true);
+        
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() - 290, image.getHeight() - 525);
+        setImage(image);
     }
     
     /**

@@ -13,6 +13,10 @@ public class Ceramica extends Waste
         setName("Ceramica");
         setOrganic(false);
         setRecycle(false);
+        
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() - 420, image.getHeight() - 450);
+        setImage(image);
     }
     
     /**

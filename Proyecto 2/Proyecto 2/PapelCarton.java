@@ -13,6 +13,9 @@ public class PapelCarton extends Waste
         setName("Papel Carton");
         setOrganic(false);
         setRecycle(true);
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() - 1150, image.getHeight() - 1225);
+        setImage(image);
     }
     
     /**

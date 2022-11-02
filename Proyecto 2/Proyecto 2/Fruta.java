@@ -13,6 +13,10 @@ public class Fruta extends Waste
         setName("Fruta");
         setOrganic(true);
         setRecycle(false);
+        
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() - 375, image.getHeight() - 540);
+        setImage(image);
     }
     
     /**

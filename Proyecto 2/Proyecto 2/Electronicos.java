@@ -13,6 +13,9 @@ public class Electronicos extends Waste
         setName("Electronicos");
         setOrganic(false);
         setRecycle(false);
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() - 300, image.getHeight() - 330);
+        setImage(image);
     }
     
     /**

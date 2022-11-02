@@ -1,8 +1,14 @@
 #Greenfoot project file
+class.Aluminio.image=WASTE_ALUM.png
+class.BolsasPL.image=WASTE_PLSTCB.png
+class.Ceramica.image=WASTE_CRMIC.png
+class.Electronicos.image=WASTE_ELECTR.png
+class.Fruta.image=WASTE_FRT.png
 class.Game_Over.image=board.jpg
 class.Juego.image=board.jpg
 class.NonRecyclable.image=BIN-INORG-NONRECYC.png
 class.Organic.image=BIN_ORG.png
+class.PapelCarton.image=WASTE_CARDPAPR.png
 class.Recyclable.image=BIN_INORG_RECYC.png
 dependency1.from=Juego
 dependency1.to=Organic

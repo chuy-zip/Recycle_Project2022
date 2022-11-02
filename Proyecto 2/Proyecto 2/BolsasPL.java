@@ -13,6 +13,10 @@ public class BolsasPL extends Waste
         setName("Bolsa de Plastico");
         setOrganic(false);
         setRecycle(false);
+        
+        GreenfootImage image = getImage();
+        image.scale(image.getWidth() - 525, image.getHeight() - 675);
+        setImage(image);
     }
     
     /**
