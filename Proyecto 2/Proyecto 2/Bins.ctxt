@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Bins
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Bins\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment1.text=\r\n\ Act\ -\ do\ whatever\ the\ Bins\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment2.params=
+comment2.target=int\ getType()
+comment3.params=type
+comment3.target=void\ setType(int)
+comment4.params=
+comment4.target=java.lang.String\ getLabel()
+comment5.params=label
+comment5.target=void\ setLabel(java.lang.String)
+comment6.params=label
+comment6.target=void\ getLabel(java.lang.String)
+comment7.params=
+comment7.target=java.util.ArrayList\ getWastInBin()
+comment8.params=Objects
+comment8.target=void\ setWasteInBin(java.util.ArrayList)
+numComments=9
