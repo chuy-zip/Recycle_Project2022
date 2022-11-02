@@ -96,9 +96,38 @@ public class Juego extends World
         BolsasPL bolsasPL = new BolsasPL();
         addObject(bolsasPL,383,103);
         bolsasPL.setLocation(381,84);
-        
+
         Aluminio aluminio = new Aluminio();
         addObject(aluminio,389,167);
         aluminio.setLocation(456,86);
+        BolsasPL bolsasPL2 = new BolsasPL();
+        addObject(bolsasPL2,78,167);
+        BolsasPL bolsasPL3 = new BolsasPL();
+        addObject(bolsasPL3,244,187);
+        bolsasPL3.setLocation(57,293);
+        electronicos.setLocation(101,227);
+        Ceramica ceramica2 = new Ceramica();
+        addObject(ceramica2,290,143);
+        Electronicos electronicos2 = new Electronicos();
+        addObject(electronicos2,192,153);
+        ceramica2.setLocation(196,258);
+        PapelCarton papelCarton2 = new PapelCarton();
+        addObject(papelCarton2,347,167);
+        PapelCarton papelCarton3 = new PapelCarton();
+        addObject(papelCarton3,347,167);
+        papelCarton2.setLocation(230,60);
+        papelCarton2.setLocation(527,90);
+        ceramica.setLocation(275,150);
+        Fruta fruta2 = new Fruta();
+        addObject(fruta2,386,155);
+        Fruta fruta3 = new Fruta();
+        addObject(fruta3,386,155);
+        fruta2.setLocation(524,36);
+        fruta2.setLocation(370,193);
+        BolsasPL bolsasPL4 = new BolsasPL();
+        addObject(bolsasPL4,479,182);
+        bolsasPL.setLocation(345,61);
+        ceramica.setLocation(297,148);
+        electronicos2.setLocation(211,152);
     }
 }

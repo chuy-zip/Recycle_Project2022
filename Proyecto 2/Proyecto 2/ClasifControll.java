@@ -22,7 +22,7 @@ public class ClasifControll extends Actor
     }
     
     /**
-     * Logic to check if the waste placed in the organic bin is correct
+     * Logic to check if the waste placed in the correct bin
      */
     public boolean IsClassificationCorrect(Actor waste, Bins bin, Juego juego){
         if(bin.getType() == 0){
