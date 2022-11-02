@@ -1,10 +1,10 @@
 #Greenfoot project file
 class.Game_Over.image=elon-musk-convertido-presentador-disfraza-wario-dice-tiene-asperger-hace-dogecoin-hunda-2328593.jpg
 class.actun.image=elon-musk-convertido-presentador-disfraza-wario-dice-tiene-asperger-hace-dogecoin-hunda-2328593.jpg
-editor.fx.0.height=739
-editor.fx.0.width=1005
-editor.fx.0.x=340
-editor.fx.0.y=108
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=731
 package.numDependencies=0
 package.numTargets=4
@@ -53,5 +53,5 @@ target4.y=0
 version=3.0.0
 width=1237
 world.lastInstantiated=Game_Over
-xPosition=93
+xPosition=92
 yPosition=71
