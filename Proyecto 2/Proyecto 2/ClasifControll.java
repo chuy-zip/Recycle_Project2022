@@ -24,7 +24,7 @@ public class ClasifControll extends Actor
     /**
      * Logic to check if the waste placed in the organic bin is correct
      */
-    public boolean IsClassificationCorrect_ORGANIC(Actor waste, Bins bin, Juego juego){
+    public boolean IsClassificationCorrect(Actor waste, Bins bin, Juego juego){
         if(bin.getType() == 0){
             if( ((Waste)waste).isOrganic() ){
                 addPoints(juego);
@@ -35,7 +35,6 @@ public class ClasifControll extends Actor
         }
         
         else if(bin.getType() == 1 && ((Inorganic)bin).isRecyclable()){
-            System.out.println("2");
             if( !((Waste)waste).isOrganic() && ((Waste)waste).isRecycle() ){
                 addPoints(juego);
                 return true;
@@ -45,7 +44,6 @@ public class ClasifControll extends Actor
         }
         
         else if (bin.getType() == 1 && !((Inorganic)bin).isRecyclable()){
-            System.out.println("3");
             if( !((Waste)waste).isOrganic() && !((Waste)waste).isRecycle() ){
                 addPoints(juego);
                 return true;
@@ -54,32 +52,6 @@ public class ClasifControll extends Actor
             return false;
         }
         
-        return false;
-    }
-    
-    /**
-     * Logic to check if the waste placed int inorganic and recyclable bin is correct
-     */
-    public boolean IsClassificationCorrect_INORGANIC_REC(Waste waste, Bins bin, Juego juego){
-        if (!waste.isOrganic() && bin.getType() == 1 && ((Inorganic)bin).isRecyclable() ){
-            System.out.println("Correcto");
-            return true;
-        }
-        
-        SubstractPoints(juego);
-        return false;
-    }
-    
-    /**
-     * Logic to check if the waste placed int inorganic and Nonrecyclable bin is correct
-     */
-    public boolean IsClassificationCorrect_INORGANIC_NONREC(Waste waste, Bins bin, Juego juego){
-        if (!waste.isOrganic() && bin.getType() == 1 && !((Inorganic)bin).isRecyclable() ){
-            System.out.println("Correcto");
-            return true;
-        }
-        
-        SubstractPoints(juego);
         return false;
     }
     

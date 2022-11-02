@@ -31,7 +31,7 @@ public abstract class Bins extends Actor
             world = getWorld();
             world.removeObject(Waste);
             
-            Controller.IsClassificationCorrect_ORGANIC(Waste, this, (Juego)getWorld());
+            Controller.IsClassificationCorrect(Waste, this, (Juego)getWorld());
         }
     }
     
