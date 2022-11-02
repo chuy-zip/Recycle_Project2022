@@ -25,12 +25,35 @@ public class ClasifControll extends Actor
      * Logic to check if the waste placed in the organic bin is correct
      */
     public boolean IsClassificationCorrect_ORGANIC(Actor waste, Bins bin, Juego juego){
-        if (((Waste)waste).isOrganic() && bin.getType() == 0){
-            addPoints(juego);
-            return true;
+        if(bin.getType() == 0){
+            if( ((Waste)waste).isOrganic() ){
+                addPoints(juego);
+                return true;
+            }
+            SubstractPoints(juego);
+            return false;
         }
         
-        SubstractPoints(juego);
+        else if(bin.getType() == 1 && ((Inorganic)bin).isRecyclable()){
+            System.out.println("2");
+            if( !((Waste)waste).isOrganic() && ((Waste)waste).isRecycle() ){
+                addPoints(juego);
+                return true;
+            }
+            SubstractPoints(juego);
+            return false;
+        }
+        
+        else if (bin.getType() == 1 && !((Inorganic)bin).isRecyclable()){
+            System.out.println("3");
+            if( !((Waste)waste).isOrganic() && !((Waste)waste).isRecycle() ){
+                addPoints(juego);
+                return true;
+            }
+            SubstractPoints(juego);
+            return false;
+        }
+        
         return false;
     }
     
@@ -60,18 +83,13 @@ public class ClasifControll extends Actor
         return false;
     }
     
-    public void addPoints(Juego juego){
-        System.out.println("Coasdasdasrrecto");
-        juego.setScore(5);
-        
+    public void addPoints(Juego juego){        
         int gameScore = juego.getScore();
             
         juego.setScore(gameScore + 50);
     }
     
     public void SubstractPoints(Juego juego){
-        juego.setScore(5);
-        
         int gameScore = juego.getScore();
             
         juego.setScore(gameScore - 50);
