@@ -8,6 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class PapelCarton extends Waste
 {
+    public PapelCarton(){
+        setType(5);
+        setName("Papel Carton");
+        setOrganic(false);
+        setRecycle(true);
+    }
+    
     /**
      * Act - do whatever the PapelCarton wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

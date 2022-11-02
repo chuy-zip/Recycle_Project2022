@@ -8,6 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Aluminio extends Waste
 {
+    public Aluminio(){
+        setType(0);
+        setName("Aluminio");
+        setOrganic(false);
+        setRecycle(true);
+    }
+    
     /**
      * Act - do whatever the Aluminio wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

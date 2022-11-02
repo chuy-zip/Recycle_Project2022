@@ -8,6 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Ceramica extends Waste
 {
+    public Ceramica(){
+        setType(2);
+        setName("Ceramica");
+        setOrganic(false);
+        setRecycle(false);
+    }
+    
     /**
      * Act - do whatever the Ceramica wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

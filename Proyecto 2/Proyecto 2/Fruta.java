@@ -8,6 +8,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Fruta extends Waste
 {
+    public Fruta(){
+        setType(4);
+        setName("Fruta");
+        setOrganic(true);
+        setRecycle(false);
+    }
+    
     /**
      * Act - do whatever the Fruta wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
