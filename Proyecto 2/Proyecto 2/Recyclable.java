@@ -24,6 +24,6 @@ public class Recyclable extends Inorganic
      */
     public void act()
     {
-        // Add your action code here.
+        DetectWaste();
     }
 }

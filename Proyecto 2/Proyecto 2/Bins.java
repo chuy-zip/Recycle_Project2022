@@ -18,7 +18,17 @@ public abstract class Bins extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act(){
-        // Add your action code here.
+    }
+    
+    public void DetectWaste(){
+        Actor Waste;
+        Waste = getOneObjectAtOffset(0, 0, Waste.class);
+        
+        if (Waste != null){
+            World world;
+            world = getWorld();
+            world.removeObject(Waste);
+        }
     }
     
     public int getType(){

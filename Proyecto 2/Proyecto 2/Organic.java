@@ -23,6 +23,6 @@ public class Organic extends Bins
      */
     public void act()
     {
-        // Add your action code here.
+        DetectWaste();
     }
 }

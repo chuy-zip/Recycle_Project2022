@@ -8,6 +8,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ClasifControll extends Actor
 {
+    public ClasifControll(){
+        
+    }
+    
     /**
      * Act - do whatever the ClasifControll wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
