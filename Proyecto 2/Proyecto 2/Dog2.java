@@ -14,6 +14,9 @@ public class Dog2 extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        if (Greenfoot.mousePressed(this))
+        {
+            Greenfoot.setWorld(new Juego());
+        }
     }
 }

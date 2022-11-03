@@ -3,6 +3,7 @@ class.Aluminio.image=WASTE_ALUM.png
 class.BolsasPL.image=WASTE_PLSTCB.png
 class.Ceramica.image=WASTE_CRMIC.png
 class.Dog.image=earth\ day\ (Card\ (Landscape))\ (4).png
+<<<<<<< Updated upstream
 class.Electronicos.image=WASTE_ELECTR.png
 class.Fruta.image=WASTE_FRT.png
 class.Game_Over.image=GameOver.png
@@ -11,6 +12,12 @@ class.NonRecyclable.image=BIN-INORG-NONRECYC.png
 class.Organic.image=BIN_ORG.png
 class.PapelCarton.image=WASTE_CARDPAPR.png
 class.Recyclable.image=BIN_INORG_RECYC.png
+=======
+class.Dog2.image=earth\ day\ (Card\ (Landscape))\ (5)\ (1).png
+class.Game_Over.image=elon-musk-convertido-presentador-disfraza-wario-dice-tiene-asperger-hace-dogecoin-hunda-2328593.jpg
+class.Menu.image=earth\ day\ (Card\ (Landscape))\ (6).png
+class.Start.image=Sin\ t\u00EDtulo.png
+>>>>>>> Stashed changes
 dependency1.from=Start
 dependency1.to=Dog
 dependency1.type=UsesDependency
@@ -68,12 +75,21 @@ dependency8.type=UsesDependency
 dependency9.from=Juego
 dependency9.to=Ceramica
 dependency9.type=UsesDependency
+<<<<<<< Updated upstream
 editor.fx.0.height=676
 editor.fx.0.width=816
 editor.fx.0.x=847
 editor.fx.0.y=265
 height=1047
 package.numDependencies=19
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=731
+package.numDependencies=12
+>>>>>>> Stashed changes
 package.numTargets=20
 project.charset=windows-1252
 publish.hasSource=false
@@ -230,7 +246,14 @@ target9.width=120
 target9.x=0
 target9.y=0
 version=3.0.0
+<<<<<<< Updated upstream
 width=974
 world.lastInstantiated=Game_Over
 xPosition=0
 yPosition=0
+=======
+width=1237
+world.lastInstantiated=Menu
+xPosition=92
+yPosition=71
+>>>>>>> Stashed changes
