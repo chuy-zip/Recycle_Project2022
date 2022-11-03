@@ -17,5 +17,13 @@ public class Instrucciones extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(640, 480, 1); 
+        prepare();
+    }
+    
+    private void prepare()
+    {
+        GameSB sGame = new GameSB();
+        addObject(sGame, 250, 117);
+        sGame.setLocation(324,288);
     }
 }
