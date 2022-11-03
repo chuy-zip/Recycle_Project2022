@@ -28,18 +28,6 @@ public class Menu extends World
     {
         Dog2 dog2 = new Dog2();
         addObject(dog2, 250, 117);
-        dog2.setLocation(488,325);
-        dog2.setLocation(528,283);
-        dog2.setLocation(522,285);
-        dog2.setLocation(484,296);
-        dog2.setLocation(504,308);
-        dog2.setLocation(526,276);
-        dog2.setLocation(526,288);
-        dog2.setLocation(503,269);
-        dog2.setLocation(469,316);
-        dog2.setLocation(495,280);
-        dog2.setLocation(480,331);
-        dog2.setLocation(552,309);
         dog2.setLocation(508,295);
     }
 }
