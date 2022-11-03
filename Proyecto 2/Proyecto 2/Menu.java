@@ -29,5 +29,10 @@ public class Menu extends World
         Dog2 dog2 = new Dog2();
         addObject(dog2, 250, 117);
         dog2.setLocation(508,295);
+
+        Dog3 dog3 = new Dog3();
+        addObject(dog3, 250, 117);
+        dog3.setLocation(195,296);
+        dog3.setLocation(178,301);
     }
 }
