@@ -2,9 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 
 /**
- * Write a description of class Bins here.
+ * Parent Class of types of bins
  * 
- * @author (your name) 
+ * @author Ricardo Chuy
  * @version (a version number or a date)
  */
 public abstract class Bins extends Actor
@@ -21,6 +21,11 @@ public abstract class Bins extends Actor
     public void act(){
     }
     
+    /**
+     * Method for all type of bins that detects contact with a given Waste
+     * On contact the waste is deleted and with the logic controller, it is verified
+     * if the clasification is correct
+     */
     public void DetectWaste(){
         Actor Waste;
         Waste = getOneObjectAtOffset(0, 0, Waste.class);
@@ -47,10 +52,6 @@ public abstract class Bins extends Actor
     }
     
     public void setLabel(String label){
-        Label = label;
-    }
-    
-    public void getLabel(String label){
         Label = label;
     }
     

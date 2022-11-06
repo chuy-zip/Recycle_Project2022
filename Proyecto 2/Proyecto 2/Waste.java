@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Waste here.
+ * Parent class of all type of waste
  * 
- * @author (your name) 
+ * @author Ricardo Chuy
  * @version (a version number or a date)
  */
 public abstract class Waste extends Actor
@@ -24,10 +24,16 @@ public abstract class Waste extends Actor
         // Add your action code here.
     }
     
+    /**
+     * Makes every type of waste, automatically move 1 unit
+     */
     public void AutomaticMovement(){
         move(1);
     }
     
+    /**
+     * Method that makes possible to drag and drop any kinf of waste
+     */
     public void DragAndDrop(){
         if(Greenfoot.mouseDragged(this)){
             MouseInfo mouse = Greenfoot.getMouseInfo();
@@ -42,11 +48,14 @@ public abstract class Waste extends Actor
         }
     }
     
+    /**
+     * Detection of position, if the objecto its found near the end fo the world
+     * it is deleted and poins are substracted also
+     */
     public void DetectEnd(){
-        if(getX() >= 580){
-            World world;
-            world = getWorld();
-            
+        World world;
+        world = getWorld();
+        if(getX() >= world.getWidth() - 10){
             int gameScore = ((Juego)world).getScore();
             ((Juego)world).setScore(gameScore - 50);
             

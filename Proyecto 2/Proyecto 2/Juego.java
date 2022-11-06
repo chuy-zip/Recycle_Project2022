@@ -1,14 +1,14 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Juego here.
+ * Game Screen, were the clasification of different Waste Objects are made
  * 
- * @author (your name) 
+ * @author Ricardo Chuy
  * @version (a version number or a date)
  */
 public class Juego extends World
 {
-    private int timer = 3650;
+    private int timer = 7250;
     private int score;
     private ClasifControll Controller = new ClasifControll();
     
@@ -33,8 +33,8 @@ public class Juego extends World
     }
     
     /**
-     * Act - do whatever the Aluminio wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Act method that checks every fram to shoe the time, score, spawn new waste and change screen when 
+     * the time reaches 0
      */
     public void act()
     {
@@ -46,27 +46,33 @@ public class Juego extends World
         }
     }
     
+    /**
+     * Method to show the time that is left, only when module 60
+     * of the time is equal to 0 (60 frames in 1 second).
+     */
     public void ShowTimer(){
         timer--;
         if (timer % 60 == 0){
-            showText(""+ timer / 60, 50, 50);
+            showText("Tiempo: "+ timer / 60, 50, 50);
         }
     }
     
+    /**
+     * Method to show score
+     */
     public void ShowScore(){
         showText("Puntos: "+ score, 540, 50);
     }
     
+    /**
+     * By getting a random waste with the logic controller, the world adds this new objecto
+     * when the module 120 of timer equals 0 (Every 2 seconds)
+     */
     public void SpawnNewWaste(){
-        Actor random_Waste = Controller.RandomIntForWaste();
-        if (timer % 180 == 0){
-            addObject(random_Waste,50,200);
+        Actor random_Waste = Controller.RandomWasteGenerator();
+        if (timer % 120 == 0){
+            addObject(random_Waste,10,200);
         }
-        
-    }
-    
-    public void DeleteWasteAtEnd(){
-        
     }
     
     /**
@@ -84,8 +90,13 @@ public class Juego extends World
         NonRecyclable nonRecyclable = new NonRecyclable();
         addObject(nonRecyclable,318,292);
 
-        recyclable.setLocation(446,341);
-        nonRecyclable.setLocation(329,342);
-        organic.setLocation(559,340);
-    }
+        organic.setLocation(550,340);
+        showText(""+ organic.getLabel(), organic.getX(), organic.getY());
+        
+        recyclable.setLocation(440,340);
+        showText(""+ recyclable.getLabel(), recyclable.getX(), recyclable.getY());
+        
+        nonRecyclable.setLocation(310,340);
+        showText(""+ nonRecyclable.getLabel(), nonRecyclable.getX(), recyclable.getY());
+        }
 }

@@ -1,9 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class NonRecyclable here.
+ * A class that is both a bin and inroganic, and adds the characteristics for
+ * a nonREcylable bin, for this kind of objects too.
  * 
- * @author (your name) 
+ * @author Ricardo Chuy 
  * @version (a version number or a date)
  */
 public class NonRecyclable extends Inorganic
@@ -11,7 +12,7 @@ public class NonRecyclable extends Inorganic
     public NonRecyclable(){
         super();
         setRecyclable(false);
-        setLabel(getLabel() + "Reciclable");
+        setLabel(getLabel() + "\nNo Reciclable");
         
         GreenfootImage image = getImage();
         image.scale(image.getWidth() - 770, image.getHeight() - 770);
@@ -19,8 +20,7 @@ public class NonRecyclable extends Inorganic
     }
     
     /**
-     * Act - do whatever the NonRecyclable wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * Checking for collisions constantly in game
      */
     public void act()
     {

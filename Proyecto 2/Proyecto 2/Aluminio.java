@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Aluminio here.
+ * Un tipo de desecho que puede ser clasificlable
  * 
- * @author (your name) 
+ * @author Ricardo Chuy
  * @version (a version number or a date)
  */
 public class Aluminio extends Waste

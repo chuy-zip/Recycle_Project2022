@@ -1,15 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Inorganic here.
+ * Class that extends from bins, correspondes to inorganic and has 2 toher subclasses
+ * Recyclable and NonRecyclable
  * 
- * @author (your name) 
+ * @author Ricardo Chuy 
  * @version (a version number or a date)
  */
 public class Inorganic extends Bins
 {
     private boolean Recyclable;
     
+    /**
+     * Constructor of the class inorganic
+     */
     public Inorganic(){
         setType(1);
         setLabel("Inorganico");

@@ -35,6 +35,7 @@ public class Game_Over extends World
         showText(""+ Name, 290, 190);
 
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.

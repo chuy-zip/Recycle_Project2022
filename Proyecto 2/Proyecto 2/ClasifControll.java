@@ -1,9 +1,9 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class ClasifControll here.
+ * Class that manages almost all logic. Specially de clasification of waste
  * 
- * @author (your name) 
+ * @author Ricardo Chuy
  * @version (a version number or a date)
  */
 public class ClasifControll extends Actor
@@ -55,12 +55,18 @@ public class ClasifControll extends Actor
         return false;
     }
     
+    /**
+     * Adding points to the world score variable
+     */
     public void addPoints(Juego juego){        
         int gameScore = juego.getScore();
             
         juego.setScore(gameScore + 50);
     }
     
+    /**
+     * Substracting points to the world score variable
+     */
     public void SubstractPoints(Juego juego){
         int gameScore = juego.getScore();
             
@@ -68,8 +74,11 @@ public class ClasifControll extends Actor
     }
     
     
-    
-    public Actor RandomIntForWaste(){
+    /**
+     * Generator for 1 random Waste
+     * returns an actor that may vary depending a randomly generated number
+     */
+    public Actor RandomWasteGenerator(){
         int random = (int)Math.floor(Math.random()*(6-1+1)+1);
         Actor new_Waste;
         if(random == 1){

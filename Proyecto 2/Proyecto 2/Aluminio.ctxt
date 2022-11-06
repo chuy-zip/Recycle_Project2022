@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Aluminio
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Aluminio\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ Un\ tipo\ de\ desecho\ que\ puede\ ser\ clasificlable\r\n\ \r\n\ @author\ Ricardo\ Chuy\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=
 comment1.target=Aluminio()
 comment2.params=
