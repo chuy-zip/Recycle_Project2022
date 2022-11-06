@@ -8,8 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Juego extends World
 {
-    private int timer = 3600;
+    private int timer = 3650;
     private int score;
+    private ClasifControll Controller = new ClasifControll();
     
     /**
      * Constructor for objects of class Juego.
@@ -39,6 +40,7 @@ public class Juego extends World
     {
         ShowTimer();
         ShowScore();
+        SpawnNewWaste();
         if (timer <= 0) {
             Greenfoot.setWorld(new Game_Over(score));
         }
@@ -55,7 +57,17 @@ public class Juego extends World
         showText("Puntos: "+ score, 540, 50);
     }
     
+    public void SpawnNewWaste(){
+        Actor random_Waste = Controller.RandomIntForWaste();
+        if (timer % 180 == 0){
+            addObject(random_Waste,50,200);
+        }
+        
+    }
     
+    public void DeleteWasteAtEnd(){
+        
+    }
     
     /**
      * Prepare the world for the start of the program.
@@ -63,7 +75,6 @@ public class Juego extends World
      */
     private void prepare()
     {
-
         Organic organic = new Organic();
         addObject(organic,150,289);
 
@@ -76,58 +87,5 @@ public class Juego extends World
         recyclable.setLocation(446,341);
         nonRecyclable.setLocation(329,342);
         organic.setLocation(559,340);
-
-        PapelCarton papelCarton = new PapelCarton();
-        addObject(papelCarton,265,186);
-        papelCarton.setLocation(70,82);
-
-        Fruta fruta = new Fruta();
-        addObject(fruta,193,125);
-        fruta.setLocation(147,74);
-
-        Electronicos electronicos = new Electronicos();
-        addObject(electronicos,225,103);
-        electronicos.setLocation(212,87);
-
-        Ceramica ceramica = new Ceramica();
-        addObject(ceramica,315,152);
-        ceramica.setLocation(299,90);
-
-        BolsasPL bolsasPL = new BolsasPL();
-        addObject(bolsasPL,383,103);
-        bolsasPL.setLocation(381,84);
-
-        Aluminio aluminio = new Aluminio();
-        addObject(aluminio,389,167);
-        aluminio.setLocation(456,86);
-        BolsasPL bolsasPL2 = new BolsasPL();
-        addObject(bolsasPL2,78,167);
-        BolsasPL bolsasPL3 = new BolsasPL();
-        addObject(bolsasPL3,244,187);
-        bolsasPL3.setLocation(57,293);
-        electronicos.setLocation(101,227);
-        Ceramica ceramica2 = new Ceramica();
-        addObject(ceramica2,290,143);
-        Electronicos electronicos2 = new Electronicos();
-        addObject(electronicos2,192,153);
-        ceramica2.setLocation(196,258);
-        PapelCarton papelCarton2 = new PapelCarton();
-        addObject(papelCarton2,347,167);
-        PapelCarton papelCarton3 = new PapelCarton();
-        addObject(papelCarton3,347,167);
-        papelCarton2.setLocation(230,60);
-        papelCarton2.setLocation(527,90);
-        ceramica.setLocation(275,150);
-        Fruta fruta2 = new Fruta();
-        addObject(fruta2,386,155);
-        Fruta fruta3 = new Fruta();
-        addObject(fruta3,386,155);
-        fruta2.setLocation(524,36);
-        fruta2.setLocation(370,193);
-        BolsasPL bolsasPL4 = new BolsasPL();
-        addObject(bolsasPL4,479,182);
-        bolsasPL.setLocation(345,61);
-        ceramica.setLocation(297,148);
-        electronicos2.setLocation(211,152);
     }
 }

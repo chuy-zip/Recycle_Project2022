@@ -19,7 +19,6 @@ public abstract class Bins extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act(){
-        
     }
     
     public void DetectWaste(){

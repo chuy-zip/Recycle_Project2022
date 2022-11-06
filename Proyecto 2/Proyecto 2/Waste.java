@@ -24,6 +24,10 @@ public abstract class Waste extends Actor
         // Add your action code here.
     }
     
+    public void AutomaticMovement(){
+        move(1);
+    }
+    
     public void DragAndDrop(){
         if(Greenfoot.mouseDragged(this)){
             MouseInfo mouse = Greenfoot.getMouseInfo();
@@ -36,6 +40,10 @@ public abstract class Waste extends Actor
                 setLocation(mouse.getX()+rx, mouse.getY() +ry);
             }
         }
+    }
+    
+    public void DaetectEnd(){
+        
     }
     
     public int getType(){

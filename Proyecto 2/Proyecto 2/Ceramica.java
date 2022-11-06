@@ -26,5 +26,6 @@ public class Ceramica extends Waste
     public void act()
     {
        DragAndDrop();
+       AutomaticMovement();
     }
 }

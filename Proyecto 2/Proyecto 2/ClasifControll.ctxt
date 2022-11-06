@@ -13,4 +13,6 @@ comment4.params=juego
 comment4.target=void\ addPoints(Juego)
 comment5.params=juego
 comment5.target=void\ SubstractPoints(Juego)
-numComments=6
+comment6.params=
+comment6.target=greenfoot.Actor\ RandomIntForWaste()
+numComments=7

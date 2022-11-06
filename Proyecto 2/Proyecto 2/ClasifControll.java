@@ -66,4 +66,42 @@ public class ClasifControll extends Actor
             
         juego.setScore(gameScore - 50);
     }
+    
+    
+    
+    public Actor RandomIntForWaste(){
+        int random = (int)Math.floor(Math.random()*(6-1+1)+1);
+        Actor new_Waste;
+        if(random == 1){
+            new_Waste = new Aluminio();
+            return new_Waste;
+        }
+        
+        else if(random == 2){
+            new_Waste = new BolsasPL();
+            return new_Waste;
+        }
+        
+        else if(random == 3){
+            new_Waste = new Ceramica();
+            return new_Waste;
+        }
+        
+        else if(random == 4){
+            new_Waste = new Electronicos();
+            return new_Waste;
+        }
+        
+        else if(random == 5){
+            new_Waste = new Fruta();
+            return new_Waste;
+        }
+        
+        else if(random == 6){
+            new_Waste = new PapelCarton();
+            return new_Waste;
+        }
+        
+        return null;
+    }
 }
