@@ -58,7 +58,7 @@ public abstract class Waste extends Actor
         if(getX() >= world.getWidth() - 10){
             int gameScore = ((Juego)world).getScore();
             ((Juego)world).setScore(gameScore - 50);
-            
+            Greenfoot.playSound("WRONG.mp3");
             world.removeObject(this);
             
         }

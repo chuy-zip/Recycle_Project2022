@@ -60,7 +60,7 @@ public class ClasifControll extends Actor
      */
     public void addPoints(Juego juego){        
         int gameScore = juego.getScore();
-            
+        Greenfoot.playSound("CORRECT.mp3");
         juego.setScore(gameScore + 50);
     }
     
@@ -69,7 +69,7 @@ public class ClasifControll extends Actor
      */
     public void SubstractPoints(Juego juego){
         int gameScore = juego.getScore();
-            
+        Greenfoot.playSound("WRONG.mp3");
         juego.setScore(gameScore - 50);
     }
     
