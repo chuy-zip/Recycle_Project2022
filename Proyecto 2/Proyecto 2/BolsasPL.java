@@ -27,5 +27,6 @@ public class BolsasPL extends Waste
     {
         DragAndDrop();
         AutomaticMovement();
+        DetectEnd();
     }
 }

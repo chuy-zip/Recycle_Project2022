@@ -27,5 +27,6 @@ public class Aluminio extends Waste
     {
         DragAndDrop();
         AutomaticMovement();
+        DetectEnd();
     }
 }

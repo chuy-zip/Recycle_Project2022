@@ -26,5 +26,6 @@ public class Electronicos extends Waste
     {
         DragAndDrop();
         AutomaticMovement();
+        DetectEnd();
     }
 }

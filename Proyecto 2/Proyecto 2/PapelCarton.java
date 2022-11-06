@@ -26,5 +26,6 @@ public class PapelCarton extends Waste
     {
         DragAndDrop();
         AutomaticMovement();
+        DetectEnd();
     }
 }

@@ -42,8 +42,17 @@ public abstract class Waste extends Actor
         }
     }
     
-    public void DaetectEnd(){
-        
+    public void DetectEnd(){
+        if(getX() >= 580){
+            World world;
+            world = getWorld();
+            
+            int gameScore = ((Juego)world).getScore();
+            ((Juego)world).setScore(gameScore - 50);
+            
+            world.removeObject(this);
+            
+        }
     }
     
     public int getType(){

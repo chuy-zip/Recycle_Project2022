@@ -27,5 +27,6 @@ public class Fruta extends Waste
     {
         DragAndDrop();
         AutomaticMovement();
+        DetectEnd();
     }
 }
